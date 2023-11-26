@@ -26,7 +26,7 @@ class SearchEngine(ABC):
         pass
 
     @abstractmethod
-    def __get_vacancies(self, search_query, search_area):
+    def get_vacancies(self, search_query, search_area):
         pass
 
 
@@ -111,7 +111,7 @@ class SuperJobAPI(SearchEngine):
         """
         Выполнение запроса по параметрам пользователя
         """
-        headers = {"X-Api-App_Id": os.environ["SUPERJOB_API_KEY"]}
+        headers = {"X-Api-App-Id": os.environ["SUPERJOB_API_KEY"]}
         params = {
             "keyword": search_query,
             "page": 0,
