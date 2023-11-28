@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kw-4-potemkin-da"
+version = "0.1.0"
+description = ""
+authors = ["AmeliPulen <139628158+AmeliPulen@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "kw_4_potemkin_da"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django-request = "^1.6.3"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
